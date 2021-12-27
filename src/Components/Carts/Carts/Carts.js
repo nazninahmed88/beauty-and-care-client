@@ -5,7 +5,7 @@ import Cart from '../Cart/Cart';
 const Carts = () => {
     const [purchases, setPurchases] = useState([]);
     useEffect(() => {
-        const url = 'http://localhost:5000/cart'
+        const url = 'https://young-sierra-19007.herokuapp.com/cart'
         fetch(url)
             .then(res => res.json())
             .then(data => setPurchases(data))
@@ -13,7 +13,7 @@ const Carts = () => {
     const handleDelete = id => {
         // console.log(id);
 
-        const url = `http://localhost:5000/cart/${id}`;
+        const url = `https://young-sierra-19007.herokuapp.com/cart/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

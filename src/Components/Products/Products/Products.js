@@ -5,13 +5,13 @@ import Product from '../Product/Product';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        const url = 'http://localhost:5000/products'
+        const url = 'https://young-sierra-19007.herokuapp.com/products'
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
     const handleCart = cart => {
-        axios.post('http://localhost:5000/cart', cart)
+        axios.post('https://young-sierra-19007.herokuapp.com/cart', cart)
             .then(res => {
                 alert('Added Successfully');
             })
