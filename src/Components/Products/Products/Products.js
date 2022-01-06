@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import './Products.css'
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -18,7 +19,7 @@ const Products = () => {
     }
 
     return (
-        <div>
+        <div className='bg'>
           
             <div className='container'>
                 <div class="row row-cols-1 row-cols-md-3 g-4">

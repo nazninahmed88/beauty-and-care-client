@@ -9,7 +9,8 @@ const Banner = () => {
                 <img   className='img-fluid' src='/images/banner.jpg' />
         
         </div>
-        <hr />
+     <br />
+     <br />
     </div>
     
     );

@@ -6,11 +6,11 @@ const Cart = (props) => {
     const { handleDelete } = props;
     return (
         <div className="col shadow p-3 mb-5 bg-body rounded mt-2">
-            <div className="row">
+            <div className="row carts">
                 <div className="col-md-4">
                     <img src={photo} className="img-fluid rounded-start" alt="..." />
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 cards">
                     <div className="card-body">
                         <h1 className="card-title">{name}</h1>
                         <h3>
